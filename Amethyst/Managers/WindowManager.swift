@@ -112,7 +112,7 @@ final class WindowManager<Application: ApplicationType>: NSObject, Codable {
         guard let focusedWindow = Window.currentlyFocused(), let screen = focusedWindow.screen() else {
             return
         }
-        markScreen(screen, forReflowWithChange: .applicationActivate)
+        markScreen(screen, forReflowWithChange: .focusChanged(window: focusedWindow))
 //        doMouseFollowsFocus(focusedWindow: focusedWindow)
     }
 
