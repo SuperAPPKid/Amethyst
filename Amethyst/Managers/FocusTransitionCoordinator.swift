@@ -23,6 +23,7 @@ protocol FocusTransitionTarget: AnyObject {
 
     func executeTransition(_ transition: FocusTransition<Window>)
 
+    func currentFocusedWindow(on screen: Screen) -> Window?
     func lastFocusedWindow(on screen: Screen) -> Window?
     func screen(at index: Int) -> Screen?
     func windows(onScreen screen: Screen) -> [Window]
@@ -118,7 +119,7 @@ class FocusTransitionCoordinator<Target: FocusTransitionTarget> {
         }
 
         if focusedWindow.id() == windows[0].id() {
-            (target?.lastFocusedWindow(on: screen) ?? windows[0]).focus()
+            target?.lastFocusedWindow(on: screen)?.focus()
         } else {
             windows[0].focus()
         }
@@ -135,7 +136,7 @@ class FocusTransitionCoordinator<Target: FocusTransitionTarget> {
         }
 
         // If the previous focus has been tracked, then focus the window that had the focus before.
-        if let previouslyFocused = target?.lastFocusedWindow(on: screen), previouslyFocused.isOnScreen() {
+        if let previouslyFocused = target?.currentFocusedWindow(on: screen), previouslyFocused.isOnScreen() {
             target?.executeTransition(.focusWindow(previouslyFocused))
             return
         }

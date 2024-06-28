@@ -32,6 +32,7 @@ final class ScreenManager<Delegate: ScreenManagerDelegate>: NSObject, Codable {
 
     /// The last window that has been focused on the screen. This value is updated by the notification observations in
     /// `ObserveApplicationNotifications`.
+    private(set) var currentFocusedWindow: Window?
     private(set) var lastFocusedWindow: Window?
     private let userConfiguration: UserConfiguration
 
@@ -161,12 +162,17 @@ final class ScreenManager<Delegate: ScreenManagerDelegate>: NSObject, Codable {
     func setNeedsReflow(withWindowChange windowChange: Change<Window>) {
         switch windowChange {
         case let .add(window: window):
-            lastFocusedWindow = window
+            currentFocusedWindow = window
         case let .focusChanged(window):
-            lastFocusedWindow = window
+            if window == currentFocusedWindow {
+                break
+            }
+            lastFocusedWindow = currentFocusedWindow
+            currentFocusedWindow = window
+            log.error("\(currentFocusedWindow?.title() ?? "???"):\(lastFocusedWindow?.title() ?? "???")")
         case let .remove(window):
-            if lastFocusedWindow == window {
-                lastFocusedWindow = nil
+            if currentFocusedWindow == window {
+                currentFocusedWindow = nil
             }
         case .windowSwap, .applicationActivate, .applicationDeactivate, .spaceChange, .layoutChange, .tabChange, .none, .unknown:
             break
