@@ -1,5 +1,9 @@
-Amethyst
-========
+# Archived
+
+> [!IMPORTANT]
+> use [AeroSpace](https://github.com/nikitabobko/AeroSpace) instead.
+
+# Amethyst
 
 [![Discussions](https://img.shields.io/github/discussions/ianyh/Amethyst)](https://github.com/ianyh/Amethyst/discussions)
 [![Build Status](https://travis-ci.com/ianyh/Amethyst.svg?branch=development)](https://travis-ci.com/ianyh/Amethyst)
@@ -15,8 +19,7 @@ If you want to learn more about tiling window managers and the features of Ameth
 
 [Boost your MacOS PRODUCTIVITY with Amethyst | Tiling Window Manager](https://www.youtube.com/watch?v=7Z9-Ry4yGNc)
 
-Getting Amethyst
-================
+# Getting Amethyst
 
 Amethyst is available for direct download on the [releases page](https://github.com/ianyh/Amethyst/releases) or using [homebrew cask](https://github.com/Homebrew/homebrew-cask).
 
@@ -26,8 +29,7 @@ brew install --cask amethyst
 
 Note: that Amethyst now is only supported on macOS 10.15+.
 
-Using Amethyst
-==============
+# Using Amethyst
 
 Amethyst must be given permissions to use the accessibility APIs in the Privacy & Security tab, Privacy -> Accessibilty.
 
@@ -41,86 +43,83 @@ Amethyst must be given permissions to use the accessibility APIs in the Privacy 
   <img style="text-align: center" width="500px" src="docs/images/auto-rearranage.png" />
 </p>
 
-Troubleshooting
-===============
+# Troubleshooting
 
 See [Troubleshooting](docs/troubleshooting.md) for some common issues.
 
 # Configuration
 
-Keyboard Shortcuts
-------------------
+## Keyboard Shortcuts
 
 Amethyst uses two modifier combinations (`mod1` and `mod2`) and can optionally use another two (`mod3` and `mod4`).
 
-| Default Shortcut | Description |
-|---|---|
-| `mod1` | `option + shift` |
-| `mod2` | `ctrl + option + shift` |
-| `mod3` | not defined by default |
-| `mod4` | not defined by default |
+| Default Shortcut | Description             |
+| ---------------- | ----------------------- |
+| `mod1`           | `option + shift`        |
+| `mod2`           | `ctrl + option + shift` |
+| `mod3`           | not defined by default  |
+| `mod4`           | not defined by default  |
 
 And defines the following commands, mostly a mapping to xmonad key combinations.
 
-| Default Shortcut | Description |
-|---|---|
-| `mod1 + space` | Cycle layout forward |
-| `mod2 + space` | Cycle layout backwards |
-| `mod1 + h` | Shrink the main pane |
-| `mod1 + l` | Expand the main pane |
-| `mod1 + ,` | Increase main pane count |
-| `mod1 + .` | Decrease main pane count |
-| `mod1 + j` | Move focus counter clockwise |
-| `mod1 + k` | Move focus clockwise |
-| `mod1 + p` | Move focus to counter clockwise screen |
-| `mod1 + n` | Move focus to clockwise screen |
-| `mod2 + h` | Swap focused window to counter clockwise screen |
-| `mod2 + l` | Swap focused window to clockwise screen |
-| `mod2 + j` | Swap focused window counter clockwise |
-| `mod2 + k` | Swap focused window clockwise |
-| `mod1 + enter` | Swap focused window with main window |
-| `mod1 + z` | Force windows to be reevaluated |
-| `mod2 + z` | Relaunch Amethyst |
-| `mod2 + left` | Throw focused window to space left |
-| `mod2 + right` | Throw focused window to space right |
-| `mod2 + 1` | Throw focused window to space 1 |
-| `mod2 + 2` | Throw focused window to space 2 |
-| `mod2 + 3` | Throw focused window to space 3 |
-| `mod2 + 4` | Throw focused window to space 4 |
-| `mod2 + 5` | Throw focused window to space 5 |
-| `mod2 + 6` | Throw focused window to space 6 |
-| `mod2 + 7` | Throw focused window to space 7 |
-| `mod2 + 8` | Throw focused window to space 8 |
-| `mod2 + 9` | Throw focused window to space 9 |
-| `mod2 + 0` | Throw focused window to space 10 |
-| `none`     | Throw focused window to space 11 |
-| `none`     | Throw focused window to space 12 |
-| `mod1 + w` | Focus Screen 1 |
-| `mod2 + w` | Throw focused window to screen 1 |
-| `mod1 + e` | Focus Screen 2 |
-| `mod2 + e` | Throw focused window to screen 2 |
-| `mod1 + r` | Focus Screen 3 |
-| `mod2 + r` | Throw focused window to screen 3 |
-| `mod1 + q` | Focus Screen 4 |
-| `mod2 + q` | Throw focused window to screen 4 |
-| `mod1 + g` | Focus Screen 5 |
-| `mod2 + g` | Throw focused window to screen 5 |
-| `mod1 + t` | Toggle float for focused window |
-| `mod1 + i` | Display current layout |
-| `mod2 + t` | Toggle global tiling |
-| `mod1 + a` | Select tall layout |
-| `none` | Select tall-right layout |
-| `mod1 + s` | Select wide layout |
-| `none` | Select middle-wide layout |
-| `mod1 + d` | Select fullscreen layout |
-| `mod1 + f` | Select column layout |
-| `none` | Select row layout |
-| `none` | Select floating layout |
-| `none` | Select widescreen-tall layout |
-| `none` | Select bsp layout |
+| Default Shortcut | Description                                     |
+| ---------------- | ----------------------------------------------- |
+| `mod1 + space`   | Cycle layout forward                            |
+| `mod2 + space`   | Cycle layout backwards                          |
+| `mod1 + h`       | Shrink the main pane                            |
+| `mod1 + l`       | Expand the main pane                            |
+| `mod1 + ,`       | Increase main pane count                        |
+| `mod1 + .`       | Decrease main pane count                        |
+| `mod1 + j`       | Move focus counter clockwise                    |
+| `mod1 + k`       | Move focus clockwise                            |
+| `mod1 + p`       | Move focus to counter clockwise screen          |
+| `mod1 + n`       | Move focus to clockwise screen                  |
+| `mod2 + h`       | Swap focused window to counter clockwise screen |
+| `mod2 + l`       | Swap focused window to clockwise screen         |
+| `mod2 + j`       | Swap focused window counter clockwise           |
+| `mod2 + k`       | Swap focused window clockwise                   |
+| `mod1 + enter`   | Swap focused window with main window            |
+| `mod1 + z`       | Force windows to be reevaluated                 |
+| `mod2 + z`       | Relaunch Amethyst                               |
+| `mod2 + left`    | Throw focused window to space left              |
+| `mod2 + right`   | Throw focused window to space right             |
+| `mod2 + 1`       | Throw focused window to space 1                 |
+| `mod2 + 2`       | Throw focused window to space 2                 |
+| `mod2 + 3`       | Throw focused window to space 3                 |
+| `mod2 + 4`       | Throw focused window to space 4                 |
+| `mod2 + 5`       | Throw focused window to space 5                 |
+| `mod2 + 6`       | Throw focused window to space 6                 |
+| `mod2 + 7`       | Throw focused window to space 7                 |
+| `mod2 + 8`       | Throw focused window to space 8                 |
+| `mod2 + 9`       | Throw focused window to space 9                 |
+| `mod2 + 0`       | Throw focused window to space 10                |
+| `none`           | Throw focused window to space 11                |
+| `none`           | Throw focused window to space 12                |
+| `mod1 + w`       | Focus Screen 1                                  |
+| `mod2 + w`       | Throw focused window to screen 1                |
+| `mod1 + e`       | Focus Screen 2                                  |
+| `mod2 + e`       | Throw focused window to screen 2                |
+| `mod1 + r`       | Focus Screen 3                                  |
+| `mod2 + r`       | Throw focused window to screen 3                |
+| `mod1 + q`       | Focus Screen 4                                  |
+| `mod2 + q`       | Throw focused window to screen 4                |
+| `mod1 + g`       | Focus Screen 5                                  |
+| `mod2 + g`       | Throw focused window to screen 5                |
+| `mod1 + t`       | Toggle float for focused window                 |
+| `mod1 + i`       | Display current layout                          |
+| `mod2 + t`       | Toggle global tiling                            |
+| `mod1 + a`       | Select tall layout                              |
+| `none`           | Select tall-right layout                        |
+| `mod1 + s`       | Select wide layout                              |
+| `none`           | Select middle-wide layout                       |
+| `mod1 + d`       | Select fullscreen layout                        |
+| `mod1 + f`       | Select column layout                            |
+| `none`           | Select row layout                               |
+| `none`           | Select floating layout                          |
+| `none`           | Select widescreen-tall layout                   |
+| `none`           | Select bsp layout                               |
 
-Available Layouts
------------------
+## Available Layouts
 
 Amethyst allows you to cycle among several different window layouts.
 Layouts can also be enabled/disabled to control whether they appear in the cycle sequence at all.
@@ -131,11 +130,11 @@ The default layout. This gives you one "main pane" on the left, and one other pa
 
 #### Tall-Right
 
-Exactly the same as *Tall*, but the main pane is on the right, with the other pane on the left.
+Exactly the same as _Tall_, but the main pane is on the right, with the other pane on the left.
 
 #### Wide
 
-The rotated version of *Tall*, where the main pane is on the _top_ (extending the full width of the screen), and the other pane is on the bottom. If either pane has more than one window, that pane will split into columns instead of rows.
+The rotated version of _Tall_, where the main pane is on the _top_ (extending the full width of the screen), and the other pane is on the bottom. If either pane has more than one window, that pane will split into columns instead of rows.
 
 #### Two Pane
 
@@ -149,27 +148,27 @@ on the top in the vertical orientation.
 
 #### 3Column-Left
 
-A three-column version of *Tall*, with one main pane on the left (extending the full height of the screen) and two other panes, one in the middle and one on the right. Like *Tall*, if any pane has more than one window, that pane will be split into rows. You can control how many windows are in the main pane as usual; other windows will be assigned as evenly as possible between the other two panes.
+A three-column version of _Tall_, with one main pane on the left (extending the full height of the screen) and two other panes, one in the middle and one on the right. Like _Tall_, if any pane has more than one window, that pane will be split into rows. You can control how many windows are in the main pane as usual; other windows will be assigned as evenly as possible between the other two panes.
 
 #### 3Column-Middle
 
-Exactly like *3Column-Left*, but the main pane is in the middle, with the other panes on either side. (In previous versions of Amethyst, this layout was known as *Middle-Wide*.)
+Exactly like _3Column-Left_, but the main pane is in the middle, with the other panes on either side. (In previous versions of Amethyst, this layout was known as _Middle-Wide_.)
 
 #### 3Column-Right
 
-Exactly like *3Column-Left*, but the main pane is on the right, with the other panes in the middle and on the left.
+Exactly like _3Column-Left_, but the main pane is on the right, with the other panes in the middle and on the left.
 
 #### Widescreen-Tall
 
- This mode is like *Tall*, but if there are multiple windows in the main pane,
- the main pane splits into columns rather than rows.
- The other pane still splits windows into rows, like *Tall*.
- This layout gets its name because it probably makes the most sense on very
- wide screens, with a large main pane consisting of several columns, and all
- remaining windows stacked into the final column.
- Other layouts that work well on very wide screens include any that allow for
- more than two columns (to take advantage of the screen width), such as
- any of the *3Column-&ast;* layouts, or *Column*.
+This mode is like _Tall_, but if there are multiple windows in the main pane,
+the main pane splits into columns rather than rows.
+The other pane still splits windows into rows, like _Tall_.
+This layout gets its name because it probably makes the most sense on very
+wide screens, with a large main pane consisting of several columns, and all
+remaining windows stacked into the final column.
+Other layouts that work well on very wide screens include any that allow for
+more than two columns (to take advantage of the screen width), such as
+any of the _3Column-\*_ layouts, or _Column_.
 
 #### Fullscreen
 
@@ -181,12 +180,12 @@ This layout has one column per window, with each window extending the full heigh
 
 #### Row
 
-The rotated version of *Column*, where each window takes up an entire row, extending the full width of the screen.
+The rotated version of _Column_, where each window takes up an entire row, extending the full width of the screen.
 
 #### Floating
 
 This mode makes all windows "floating", allowing you to move and resize them as if Amethyst were temporarily deactivated. Unlike the other modes, this will mean that windows can be placed "on top of" each other, obscuring your view of some windows.
- 
+
 #### Binary Space Partitioning (BSP)
 
 This layout does not have a main pane in the way that other layouts do. When adding windows, any given pane can be split evenly into two panes along whatever axis is longer. This is recursive such that pane A can be split in the middle into pane A on the left and pane B on the right; pane B can then be split into pane B on top and pane C on bottom; pane C can then be split into pane C on the left and pane D on the right; and so on.
@@ -195,40 +194,35 @@ This layout does not have a main pane in the way that other layouts do. When add
 
 Custom layouts can be implemented via JavaScript. See [Custom Layouts](docs/custom-layouts.md).
 
-Configuration File
--------------
+## Configuration File
 
 Amethyst supports configuration via YAML in the home directory. See [Configuration Files](docs/configuration-files.md).
 
-Contact
-=======
+# Contact
 
 If you have questions or feedback your best options are to [tweet](https://twitter.com/amethystwm) or to get on [gitter](https://gitter.im/ianyh/Amethyst).
 
-
-Contributing
-============
+# Contributing
 
 If you'd like to contribute please branch off of the `development` branch and open pull requests against it rather than `master`. Otherwise just try to stick to the general style of the code.
 
-Donating
-========
+# Donating
 
 Amethyst is free and always will be. That said, a couple of people have expressed their desire to donate money in appreciation. Given the current political climate I would recommend donating to one of these organizations instead:
 
-* [American Civil Liberties Union](https://www.aclu.org/)
-* [Planned Parenthood](https://www.plannedparenthood.org/)
-* [Southern Poverty Law Center](https://www.splcenter.org/)
-* [National Resources Defense Council](https://www.nrdc.org/)
-* [International Refugee Assistance Project](https://refugeerights.org/)
-* [NAACP Legal Defense Fund](https://www.naacpldf.org/)
-* [The Trevor Project](https://www.thetrevorproject.org/)
-* [Mexican American Legal Defense Fund](https://www.maldef.org/)
-* [ProPublica](https://www.propublica.org/)
+- [American Civil Liberties Union](https://www.aclu.org/)
+- [Planned Parenthood](https://www.plannedparenthood.org/)
+- [Southern Poverty Law Center](https://www.splcenter.org/)
+- [National Resources Defense Council](https://www.nrdc.org/)
+- [International Refugee Assistance Project](https://refugeerights.org/)
+- [NAACP Legal Defense Fund](https://www.naacpldf.org/)
+- [The Trevor Project](https://www.thetrevorproject.org/)
+- [Mexican American Legal Defense Fund](https://www.maldef.org/)
+- [ProPublica](https://www.propublica.org/)
 
 And a bunch of technology-oriented ones:
 
-* [National Center for Women & Information Technology](https://ncwit.org/about-ncwit/donate/)
-* [girls who code](https://girlswhocode.com/get-involved/)
-* [Trans*H4CK](https://www.transhack.org/sponsorship/)
-* [Black Girls CODE](https://wearebgc.org/donate/)
+- [National Center for Women & Information Technology](https://ncwit.org/about-ncwit/donate/)
+- [girls who code](https://girlswhocode.com/get-involved/)
+- [Trans\*H4CK](https://www.transhack.org/sponsorship/)
+- [Black Girls CODE](https://wearebgc.org/donate/)
